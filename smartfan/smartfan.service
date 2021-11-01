@@ -1,0 +1,17 @@
+[Unit]
+
+Description=smartfan
+
+[Service]
+
+Type=simple
+
+RemainAfterExit=yes
+
+ExecStart=/usr/bin/python3 /home/pi/script/smartfan.py
+
+PrivateTmp=true
+
+[Install]
+
+WantedBy=multi-user.target
